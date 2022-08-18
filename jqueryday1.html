@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <title>First jQuery Example</title>  
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+ </script>  
+ <script type="text/javascript" language="javascript">  
+ $(document).ready(function() {  
+ $("p").css("background-color", "blue");  
+ });  
+ </script>  
+ </head>  
+<body>  
+<p>The first paragraph is selected.</p>  
+<p>The second paragraph is selected.</p>  
+<p>The third paragraph is selected.</p>  
+</body>  
+</html>  
+Pro2: - hide paragraph using jQuery 
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("#hide").click(function(){  
+        $("p").hide();  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>  
+<b>paragraph </b><br/>  
+qwertyutyuiop<br/>  
+asdfghjkl<br/>
+aaasdfgm<br/>  
+mmnbcz<br/>  
+qwedfghjgfdfghj<br/>  
+qowsdkmjyhgjfk
+</p>  
+<button id="hide">Hide</button>  
+</body>  
+</html>
+Pro3: - function chaining using jQuery 
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Jquery Chaining</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "blue").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">jQuery is fun!!</p>
+
+<button>Click me</button>
+
+</body>
+</html>
